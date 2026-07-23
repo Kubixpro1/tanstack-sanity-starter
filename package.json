@@ -1,0 +1,31 @@
+{
+  "name": "tanstack-start-sanity-starter",
+  "version": "0.1.0",
+  "description": "A minimal TanStack Start + Sanity CMS starter for business websites — ready to deploy on Cloudflare Pages",
+  "private": false,
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vinxi dev",
+    "build": "vinxi build",
+    "start": "vinxi start",
+    "preview": "wrangler pages dev .output/public",
+    "deploy": "wrangler pages deploy .output/public"
+  },
+  "dependencies": {
+    "@tanstack/react-router": "^1.56.0",
+    "@tanstack/start": "^1.56.0",
+    "@sanity/client": "^6.22.0",
+    "@sanity/image-url": "^1.0.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vinxi": "^0.4.3"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241022.0",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
+    "typescript": "^5.6.3",
+    "wrangler": "^3.80.0"
+  }
+}
